@@ -1,10 +1,8 @@
 import axios from 'axios'
 
-
 const profileAPI = axios.create({
-  baseURL: 'http://localhost:3001'
+  baseURL: import.meta.env.VITE_JSON_SERVER_URL
 })
-
 
 // ============================
 // GET PROFILE
@@ -14,7 +12,6 @@ export const getProfileAPI = () => {
   return profileAPI.get('/profile')
 }
 
-
 // ============================
 // CREATE PROFILE
 // ============================
@@ -22,7 +19,6 @@ export const getProfileAPI = () => {
 export const createProfileAPI = (profileData) => {
   return profileAPI.post('/profile', profileData)
 }
-
 
 // ============================
 // UPDATE PROFILE

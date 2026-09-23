@@ -1,9 +1,8 @@
 import axios from 'axios'
 
 const jsonServerAPI = axios.create({
-  baseURL: 'http://localhost:3001'
+  baseURL: import.meta.env.VITE_JSON_SERVER_URL
 })
-
 
 // ============================
 // WISHLIST
@@ -20,8 +19,6 @@ export const addToWishlistAPI = (game) => {
 export const removeFromWishlistAPI = (id) => {
   return jsonServerAPI.delete(`/wishlist/${id}`)
 }
-
-
 
 // ============================
 // VAULT
