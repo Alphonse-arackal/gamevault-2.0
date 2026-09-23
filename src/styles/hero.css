@@ -1,0 +1,327 @@
+.hero {
+  position: relative;
+
+  min-height: 760px;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   HERO CONTAINER
+========================= */
+
+.hero-container {
+  width: min(1400px, 92%);
+  margin: 0 auto;
+
+  position: relative;
+  z-index: 2;
+
+  padding-top: 80px;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+  width: min(650px, 100%);
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.hero-label {
+  display: inline-flex;
+
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 20px;
+
+  color: var(--accent);
+
+  font-size: 0.72rem;
+  font-weight: 800;
+
+  letter-spacing: 0.2em;
+}
+
+.hero-label::before {
+  content: "";
+
+  width: 28px;
+  height: 2px;
+
+  background: var(--accent);
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.hero-title {
+  margin-bottom: 20px;
+
+  font-size: clamp(3rem, 7vw, 6.5rem);
+
+  line-height: 0.9;
+
+  font-weight: 900;
+
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   META
+========================= */
+
+.hero-meta {
+  display: flex;
+
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+  color: var(--text-secondary);
+
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.hero-meta span:not(:last-child)::after {
+  content: "•";
+
+  margin-left: 12px;
+
+  color: #555;
+}
+
+.hero-rating {
+  color: var(--accent);
+}
+
+
+/* =========================
+   PLATFORMS
+========================= */
+
+.hero-platforms {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 24px;
+}
+
+.hero-platforms span {
+  padding: 7px 11px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 4px;
+
+  color: var(--text-secondary);
+
+  font-size: 0.68rem;
+  font-weight: 600;
+
+  background: rgba(255, 255, 255, 0.03);
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.hero-description {
+  max-width: 570px;
+
+  margin-bottom: 32px;
+
+  color: var(--text-secondary);
+
+  font-size: 0.95rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.hero-primary-button,
+.hero-secondary-button {
+  min-height: 48px;
+
+  padding: 0 22px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  border-radius: 4px;
+
+  font-size: 0.78rem;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.04em;
+
+  transition:
+    transform var(--transition),
+    background var(--transition),
+    color var(--transition);
+}
+
+.hero-primary-button {
+  background: var(--accent);
+
+  color: #000;
+}
+
+.hero-primary-button:hover {
+  background: var(--accent-hover);
+
+  transform: translateY(-2px);
+}
+
+.hero-secondary-button {
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  color: var(--text-primary);
+}
+
+.hero-secondary-button:hover {
+  background: rgba(184, 255, 0, 0.1);
+
+  border-color: rgba(184, 255, 0, 0.35);
+
+  color: var(--accent);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   SCROLL INDICATOR
+========================= */
+
+.hero-scroll {
+  position: absolute;
+
+  bottom: 35px;
+  left: 4%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  color: var(--text-muted);
+
+  font-size: 0.62rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+}
+
+.hero-scroll-line {
+  width: 55px;
+  height: 1px;
+
+  background: var(--text-muted);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 700px;
+
+    background-position: 65% center;
+  }
+
+  .hero-container {
+    padding-top: 100px;
+  }
+
+  .hero-title {
+    font-size: clamp(3rem, 14vw, 5rem);
+  }
+
+  .hero-description {
+    font-size: 0.86rem;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .hero-primary-button,
+  .hero-secondary-button {
+    width: 100%;
+  }
+
+}

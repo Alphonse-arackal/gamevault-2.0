@@ -1,0 +1,365 @@
+/* ============================
+   UPCOMING PAGE
+============================ */
+
+.upcoming-page {
+  min-height: calc(100vh - 80px);
+
+  background: var(--bg-primary);
+
+  padding: 70px 5% 100px;
+}
+
+.upcoming-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+/* ============================
+   HEADER
+============================ */
+
+.upcoming-header {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 45px;
+}
+
+.upcoming-label {
+  display: block;
+
+  color: var(--accent);
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 12px;
+}
+
+.upcoming-header h1 {
+  font-size: clamp(
+    46px,
+    6vw,
+    76px
+  );
+
+  line-height: 0.95;
+
+  font-weight: 900;
+
+  letter-spacing: -4px;
+
+  margin-bottom: 18px;
+}
+
+.upcoming-header p {
+  max-width: 550px;
+
+  color: var(--text-secondary);
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* ============================
+   HEADER ICON
+============================ */
+
+.upcoming-icon {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--accent);
+
+  color: var(--accent);
+
+  font-size: 28px;
+}
+
+
+/* ============================
+   RESULTS INFO
+============================ */
+
+.upcoming-results {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 16px 0;
+
+  margin-bottom: 28px;
+
+  border-top: 1px solid var(--border);
+
+  border-bottom: 1px solid var(--border);
+}
+
+.upcoming-results span:first-child {
+  color: var(--text-primary);
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.upcoming-results span:last-child {
+  color: var(--text-muted);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+/* ============================
+   GRID
+============================ */
+
+.upcoming-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 45px 24px;
+}
+
+
+/* ============================
+   CARD
+============================ */
+
+.upcoming-card {
+  position: relative;
+
+  padding-top: 28px;
+}
+
+
+/* ============================
+   RELEASE DATE
+============================ */
+
+.upcoming-date {
+  position: absolute;
+
+  top: 0;
+  left: 12px;
+
+  z-index: 5;
+
+  min-height: 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  background: var(--accent);
+
+  color: #050505;
+
+  padding: 0 11px;
+}
+
+.upcoming-date svg {
+  font-size: 13px;
+}
+
+.upcoming-date span {
+  font-size: 10px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* ============================
+   LOADER
+============================ */
+
+.upcoming-loader {
+  height: 430px;
+
+  background:
+    linear-gradient(
+      110deg,
+      #101010 8%,
+      #181818 18%,
+      #101010 33%
+    );
+
+  background-size: 200% 100%;
+
+  animation:
+    upcomingShimmer 1.5s infinite;
+}
+
+@keyframes upcomingShimmer {
+
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+
+}
+
+
+/* ============================
+   ERROR / EMPTY
+============================ */
+
+.upcoming-error,
+.upcoming-empty {
+  min-height: 350px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border: 1px dashed var(--border);
+
+  padding: 40px;
+}
+
+.upcoming-error h2,
+.upcoming-empty h2 {
+  font-size: 26px;
+
+  font-weight: 800;
+
+  margin-bottom: 10px;
+}
+
+.upcoming-error p,
+.upcoming-empty p {
+  color: var(--text-secondary);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  margin-bottom: 25px;
+}
+
+.upcoming-error button {
+  background: var(--accent);
+
+  color: #050505;
+
+  padding: 12px 22px;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.upcoming-error button:hover {
+  background: var(--accent-hover);
+}
+
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+@media (max-width: 1200px) {
+
+  .upcoming-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .upcoming-page {
+    padding: 50px 20px 80px;
+  }
+
+  .upcoming-header {
+    align-items: flex-start;
+  }
+
+  .upcoming-icon {
+    width: 55px;
+    height: 55px;
+
+    font-size: 22px;
+  }
+
+  .upcoming-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 35px 16px;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .upcoming-header h1 {
+    font-size: 48px;
+
+    letter-spacing: -2px;
+  }
+
+  .upcoming-header p {
+    font-size: 13px;
+  }
+
+  .upcoming-icon {
+    display: none;
+  }
+
+  .upcoming-results {
+    gap: 15px;
+  }
+
+  .upcoming-results span:last-child {
+    font-size: 8px;
+  }
+
+  .upcoming-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,612 @@
+/* ============================
+   VAULT PAGE
+============================ */
+
+.vault-page {
+  min-height: calc(100vh - 80px);
+  background: var(--bg-primary);
+  padding: 70px 5% 100px;
+}
+
+.vault-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+/* ============================
+   HEADER
+============================ */
+
+.vault-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 45px;
+}
+
+.vault-label {
+  display: block;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.vault-header h1 {
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -3px;
+  margin-bottom: 16px;
+}
+
+.vault-header p {
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+.vault-count {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+
+.vault-count strong {
+  color: var(--accent);
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.vault-count span {
+  color: var(--text-muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-top: 6px;
+}
+
+
+/* ============================
+   FILTERS
+============================ */
+
+.vault-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 45px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.vault-filters button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: transparent;
+  color: var(--text-secondary);
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  padding: 11px 16px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.vault-filters button span {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.vault-filters button:hover {
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+
+.vault-filters button.active {
+  background: var(--accent);
+  color: #050505;
+  border-color: var(--accent);
+}
+
+.vault-filters button.active span {
+  color: #050505;
+}
+
+
+/* ============================
+   VAULT GRID
+============================ */
+
+.vault-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+
+/* ============================
+   VAULT CARD
+============================ */
+
+.vault-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+
+  position: relative;
+}
+
+.vault-card:hover {
+  transform: translateY(-5px);
+  border-color: #3a3a3a;
+}
+
+
+/* ============================
+   IMAGE
+============================ */
+
+.vault-card-image {
+  display: block;
+
+  height: 260px;
+
+  overflow: hidden;
+
+  background: #0a0a0a;
+
+  position: relative;
+}
+
+.vault-card-image::after {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.65),
+      transparent 50%
+    );
+
+  pointer-events: none;
+}
+
+.vault-card-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.vault-card:hover
+.vault-card-image img {
+  transform: scale(1.06);
+}
+
+
+/* ============================
+   CARD CONTENT
+============================ */
+
+.vault-card-content {
+  padding: 18px;
+}
+
+.vault-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.vault-card-top a {
+  min-width: 0;
+}
+
+.vault-card-top h3 {
+  color: var(--text-primary);
+
+  font-size: 17px;
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  transition: color 0.2s ease;
+}
+
+.vault-card-top h3:hover {
+  color: var(--accent);
+}
+
+
+/* ============================
+   REMOVE BUTTON
+============================ */
+
+.vault-remove {
+  flex-shrink: 0;
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #181818;
+  color: var(--text-secondary);
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.vault-remove:hover {
+  background: #ff3b3b;
+  color: white;
+  border-color: #ff3b3b;
+}
+
+
+/* ============================
+   RATING
+============================ */
+
+.vault-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: var(--text-secondary);
+
+  font-size: 12px;
+  font-weight: 700;
+
+  margin-top: 10px;
+}
+
+.vault-card-rating span {
+  color: var(--accent);
+  font-size: 13px;
+}
+
+
+/* ============================
+   STATUS
+============================ */
+
+.vault-status {
+  margin-top: 20px;
+}
+
+.vault-status-label {
+  display: block;
+
+  color: var(--text-muted);
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 7px;
+}
+
+.vault-status-select {
+  position: relative;
+}
+
+.vault-status-select select {
+  width: 100%;
+
+  appearance: none;
+
+  background: #0b0b0b;
+  color: var(--text-primary);
+
+  border: 1px solid var(--border);
+
+  border-radius: 3px;
+
+  padding: 11px 38px 11px 12px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  outline: none;
+
+  transition: border-color 0.2s ease;
+}
+
+.vault-status-select select:hover,
+.vault-status-select select:focus {
+  border-color: var(--accent);
+}
+
+.vault-status-select svg {
+  position: absolute;
+
+  right: 12px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: var(--text-muted);
+
+  pointer-events: none;
+}
+
+
+/* ============================
+   RELEASE
+============================ */
+
+.vault-release {
+  display: block;
+
+  color: var(--text-muted);
+
+  font-size: 11px;
+  font-weight: 600;
+
+  margin-top: 14px;
+}
+
+
+/* ============================
+   CURRENT STATUS
+============================ */
+
+.vault-current-status {
+  display: none;
+}
+
+
+/* ============================
+   EMPTY STATE
+============================ */
+
+.vault-empty {
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border: 1px dashed var(--border);
+
+  padding: 50px;
+}
+
+.vault-empty-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+
+  color: var(--accent);
+
+  font-size: 30px;
+
+  margin-bottom: 25px;
+}
+
+.vault-empty h2 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.vault-empty p {
+  max-width: 420px;
+
+  color: var(--text-secondary);
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  margin-bottom: 25px;
+}
+
+.vault-browse {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--accent);
+  color: #050505;
+
+  padding: 13px 22px;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.vault-browse:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+
+/* ============================
+   LOADING
+============================ */
+
+.vault-loading {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+.vault-loader {
+  height: 420px;
+
+  background:
+    linear-gradient(
+      110deg,
+      #101010 8%,
+      #181818 18%,
+      #101010 33%
+    );
+
+  background-size: 200% 100%;
+
+  animation: vaultShimmer 1.5s infinite;
+}
+
+@keyframes vaultShimmer {
+
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+
+}
+
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+@media (max-width: 1200px) {
+
+  .vault-grid,
+  .vault-loading {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .vault-page {
+    padding: 50px 20px 80px;
+  }
+
+  .vault-header {
+    align-items: flex-start;
+  }
+
+  .vault-header h1 {
+    letter-spacing: -2px;
+  }
+
+  .vault-count {
+    display: none;
+  }
+
+  .vault-grid,
+  .vault-loading {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+  }
+
+  .vault-card-image {
+    height: 220px;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .vault-header {
+    margin-bottom: 30px;
+  }
+
+  .vault-header h1 {
+    font-size: 42px;
+  }
+
+  .vault-filters {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+
+    padding-bottom: 14px;
+
+    scrollbar-width: none;
+  }
+
+  .vault-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .vault-filters button {
+    flex-shrink: 0;
+  }
+
+  .vault-grid,
+  .vault-loading {
+    grid-template-columns: 1fr;
+  }
+
+  .vault-card-image {
+    height: 260px;
+  }
+
+  .vault-empty {
+    min-height: 350px;
+    padding: 30px 20px;
+  }
+
+}

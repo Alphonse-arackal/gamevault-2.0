@@ -1,0 +1,205 @@
+.genres-page {
+  min-height: calc(100vh - 80px);
+
+  padding: 80px 5% 100px;
+
+  background: var(--bg-primary);
+}
+
+.genres-container {
+  max-width: 1500px;
+
+  margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.genres-header {
+  max-width: 700px;
+
+  margin-bottom: 55px;
+}
+
+.genres-label {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--accent);
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.genres-header h1 {
+  font-size: clamp(42px, 5vw, 72px);
+
+  line-height: 0.95;
+
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+  letter-spacing: -3px;
+
+  margin-bottom: 20px;
+}
+
+.genres-header p {
+  color: var(--text-secondary);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  max-width: 600px;
+}
+
+
+/* GRID */
+
+.genres-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+/* LOADING */
+
+.genres-loading {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.genre-loader {
+  height: 220px;
+
+  background: #111111;
+
+  border: 1px solid #1d1d1d;
+
+  border-radius: 4px;
+
+  animation: genrePulse 1.5s infinite ease-in-out;
+}
+
+@keyframes genrePulse {
+
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+
+}
+
+
+/* ERROR */
+
+.genres-error {
+  padding: 50px;
+
+  text-align: center;
+
+  border: 1px solid #242424;
+
+  background: #0d0d0d;
+}
+
+.genres-error p {
+  color: var(--text-secondary);
+
+  margin-bottom: 20px;
+}
+
+.genres-error button {
+  padding: 12px 22px;
+
+  background: var(--accent);
+
+  color: #050505;
+
+  font-weight: 800;
+
+  border-radius: 3px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+
+  .genres-grid,
+  .genres-loading {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+  .genres-page {
+    padding: 55px 20px 70px;
+  }
+
+  .genres-header {
+    margin-bottom: 35px;
+  }
+
+  .genres-header h1 {
+    letter-spacing: -2px;
+  }
+
+  .genres-grid,
+  .genres-loading {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+  .genre-card {
+    min-height: 180px;
+
+    padding: 20px;
+  }
+
+  .genre-card h2 {
+    font-size: 23px;
+  }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+  .genres-grid,
+  .genres-loading {
+    grid-template-columns: 1fr;
+  }
+
+}

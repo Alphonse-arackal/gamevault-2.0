@@ -1,0 +1,273 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+
+  background: rgba(5, 5, 5, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-container {
+  width: min(1400px, 92%);
+  height: 100%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-logo {
+  font-size: 1.45rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  color: var(--text-primary);
+
+  white-space: nowrap;
+}
+
+.navbar-logo span {
+  color: var(--accent);
+}
+
+
+/* =========================
+   DESKTOP NAV
+========================= */
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 40px;
+}
+
+.desktop-nav a {
+  position: relative;
+
+  color: var(--text-secondary);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  transition: color var(--transition);
+}
+
+.desktop-nav a:hover {
+  color: var(--text-primary);
+}
+
+.desktop-nav a.active {
+  color: var(--accent);
+}
+
+
+/* Active underline */
+
+.desktop-nav a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--accent);
+
+  transition: width var(--transition);
+}
+
+.desktop-nav a:hover::after,
+.desktop-nav a.active::after {
+  width: 100%;
+}
+
+
+/* =========================
+   NAV ACTIONS
+========================= */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: var(--text-secondary);
+
+  transition:
+    color var(--transition),
+    background var(--transition),
+    transform var(--transition);
+}
+
+.nav-icon svg {
+  width: 19px;
+  height: 19px;
+}
+
+.nav-icon:hover {
+  color: var(--accent);
+  background: rgba(184, 255, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.profile-icon {
+  border: 1px solid var(--border);
+}
+
+
+/* =========================
+   MOBILE BUTTON
+========================= */
+
+.mobile-menu-button {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+
+  color: var(--text-primary);
+
+  font-size: 1.4rem;
+}
+
+
+/* =========================
+   MOBILE NAV
+========================= */
+
+.mobile-nav {
+  display: none;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .desktop-nav {
+    gap: 20px;
+    margin-left: 20px;
+  }
+
+  .desktop-nav a {
+    font-size: 0.78rem;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .desktop-nav,
+  .navbar-actions {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: flex;
+  }
+
+  .mobile-nav {
+    position: absolute;
+
+    top: 80px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 25px 5%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    background: rgba(5, 5, 5, 0.97);
+
+    border-bottom: 1px solid var(--border);
+
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+
+    transition:
+      transform var(--transition),
+      opacity var(--transition);
+  }
+
+  .mobile-nav-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mobile-nav a {
+    padding: 14px 10px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    border-radius: 6px;
+
+    transition:
+      color var(--transition),
+      background var(--transition);
+  }
+
+  .mobile-nav a:hover,
+  .mobile-nav a.active {
+    color: var(--accent);
+    background: rgba(184, 255, 0, 0.06);
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .navbar {
+    height: 70px;
+  }
+
+  .mobile-nav {
+    top: 70px;
+  }
+
+  .navbar-logo {
+    font-size: 1.2rem;
+  }
+
+}

@@ -1,0 +1,487 @@
+{
+  "users": [],
+  "wishlist": [
+    {
+      "rawgId": 283985,
+      "name": "Resident Evil 2 (1-Shot Demo)",
+      "background_image": "https://media.rawg.io/media/games/99e/99e8c13a3d91d0f6fb118ccd1548daee.jpg",
+      "rating": 4.14,
+      "released": "2019-01-11",
+      "genres": [
+        {
+          "id": 4,
+          "name": "Action",
+          "slug": "action"
+        }
+      ],
+      "platforms": [
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc"
+          }
+        },
+        {
+          "platform": {
+            "id": 1,
+            "name": "Xbox One",
+            "slug": "xbox-one"
+          }
+        },
+        {
+          "platform": {
+            "id": 18,
+            "name": "PlayStation 4",
+            "slug": "playstation4"
+          }
+        }
+      ],
+      "id": "elJKeqvMuTA"
+    },
+    {
+      "rawgId": 43252,
+      "name": "The Witcher 3: Wild Hunt – Blood and Wine",
+      "background_image": "https://media.rawg.io/media/games/b51/b51c3649322ac0de9dfbe83435eda449.jpg",
+      "rating": 4.82,
+      "released": "2016-05-30",
+      "genres": [
+        {
+          "id": 5,
+          "name": "RPG",
+          "slug": "role-playing-games-rpg",
+          "games_count": 62253,
+          "image_background": "https://media.rawg.io/media/games/21c/21cc15d233117c6809ec86870559e105.jpg"
+        }
+      ],
+      "platforms": [
+        {
+          "platform": {
+            "id": 18,
+            "name": "PlayStation 4",
+            "slug": "playstation4",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 7048,
+            "image_background": "https://media.rawg.io/media/games/8a0/8a02f84a5916ede2f923b88d5f8217ba.jpg"
+          },
+          "released_at": "2016-05-30",
+          "requirements_en": null,
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 562545,
+            "image_background": "https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg"
+          },
+          "released_at": "2016-05-30",
+          "requirements_en": null,
+          "requirements_ru": null
+        },
+        {
+          "platform": {
+            "id": 1,
+            "name": "Xbox One",
+            "slug": "xbox-one",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 5747,
+            "image_background": "https://media.rawg.io/media/games/737/737ea5662211d2e0bbd6f5989189e4f1.jpg"
+          },
+          "released_at": "2016-05-30",
+          "requirements_en": null,
+          "requirements_ru": null
+        }
+      ],
+      "id": "RyCwGDHelOw"
+    }
+  ],
+  "vault": [
+    {
+      "rawgId": 3498,
+      "name": "Grand Theft Auto V",
+      "background_image": "https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg",
+      "rating": 4.47,
+      "released": "2013-09-17",
+      "genres": [
+        {
+          "id": 4,
+          "name": "Action",
+          "slug": "action",
+          "games_count": 192212,
+          "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
+        }
+      ],
+      "platforms": [
+        {
+          "platform": {
+            "id": 187,
+            "name": "PlayStation 5",
+            "slug": "playstation5",
+            "image": null,
+            "year_end": null,
+            "year_start": 2020,
+            "games_count": 1552,
+            "image_background": "https://media.rawg.io/media/games/f24/f2493ea338fe7bd3c7d73750a85a0959.jpeg"
+          },
+          "released_at": "2013-09-17",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 186,
+            "name": "Xbox Series S/X",
+            "slug": "xbox-series-x",
+            "image": null,
+            "year_end": null,
+            "year_start": 2020,
+            "games_count": 1295,
+            "image_background": "https://media.rawg.io/media/games/b4a/b4adf80c36e267b35acc3497ed2af19c.jpg"
+          },
+          "released_at": "2013-09-17",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 16,
+            "name": "PlayStation 3",
+            "slug": "playstation3",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 3209,
+            "image_background": "https://media.rawg.io/media/games/8e4/8e4de3f54ac659e08a7ba6a2b731682a.jpg"
+          },
+          "released_at": "2013-09-17",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 562545,
+            "image_background": "https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg"
+          },
+          "released_at": "2013-09-17",
+          "requirements": {
+            "minimum": "Minimum:OS: Windows 10 64 Bit, Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1, Windows Vista 64 Bit Service Pack 2* (*NVIDIA video card recommended if running Vista OS)Processor: Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHzMemory: 4 GB RAMGraphics: NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)Storage: 72 GB available spaceSound Card: 100% DirectX 10 compatibleAdditional Notes: Over time downloadable content and programming changes will change the system requirements for this game.  Please refer to your hardware manufacturer and www.rockstargames.com/support for current compatibility information. Some system components such as mobile chipsets, integrated, and AGP graphics cards may be incompatible. Unlisted specifications may not be supported by publisher.     Other requirements:  Installation and online play requires log-in to Rockstar Games Social Club (13+) network; internet connection required for activation, online play, and periodic entitlement verification; software installations required including Rockstar Games Social Club platform, DirectX , Chromium, and Microsoft Visual C++ 2008 sp1 Redistributable Package, and authentication software that recognizes certain hardware attributes for entitlement, digital rights management, system, and other support purposes.     SINGLE USE SERIAL CODE REGISTRATION VIA INTERNET REQUIRED; REGISTRATION IS LIMITED TO ONE ROCKSTAR GAMES SOCIAL CLUB ACCOUNT (13+) PER SERIAL CODE; ONLY ONE PC LOG-IN ALLOWED PER SOCIAL CLUB ACCOUNT AT ANY TIME; SERIAL CODE(S) ARE NON-TRANSFERABLE ONCE USED; SOCIAL CLUB ACCOUNTS ARE NON-TRANSFERABLE.  Partner Requirements:  Please check the terms of service of this site before purchasing this software.",
+            "recommended": "Recommended:OS: Windows 10 64 Bit, Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1Processor: Intel Core i5 3470 @ 3.2GHz (4 CPUs) / AMD X8 FX-8350 @ 4GHz (8 CPUs)Memory: 8 GB RAMGraphics: NVIDIA GTX 660 2GB / AMD HD 7870 2GBStorage: 72 GB available spaceSound Card: 100% DirectX 10 compatibleAdditional Notes:"
+          }
+        },
+        {
+          "platform": {
+            "id": 18,
+            "name": "PlayStation 4",
+            "slug": "playstation4",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 7048,
+            "image_background": "https://media.rawg.io/media/games/8a0/8a02f84a5916ede2f923b88d5f8217ba.jpg"
+          },
+          "released_at": "2013-09-17",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 14,
+            "name": "Xbox 360",
+            "slug": "xbox360",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 2833,
+            "image_background": "https://media.rawg.io/media/games/5c0/5c0dd63002cb23f804aab327d40ef119.jpg"
+          },
+          "released_at": "2013-09-17",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 1,
+            "name": "Xbox One",
+            "slug": "xbox-one",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 5747,
+            "image_background": "https://media.rawg.io/media/games/737/737ea5662211d2e0bbd6f5989189e4f1.jpg"
+          },
+          "released_at": "2013-09-17",
+          "requirements": {}
+        }
+      ],
+      "status": "playing",
+      "id": "qC9XBeP2uug"
+    },
+    {
+      "rawgId": 3328,
+      "name": "The Witcher 3: Wild Hunt",
+      "background_image": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
+      "rating": 4.64,
+      "released": "2015-05-18",
+      "genres": [
+        {
+          "id": 4,
+          "name": "Action",
+          "slug": "action",
+          "games_count": 192212,
+          "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
+        },
+        {
+          "id": 5,
+          "name": "RPG",
+          "slug": "role-playing-games-rpg",
+          "games_count": 62253,
+          "image_background": "https://media.rawg.io/media/games/21c/21cc15d233117c6809ec86870559e105.jpg"
+        }
+      ],
+      "platforms": [
+        {
+          "platform": {
+            "id": 187,
+            "name": "PlayStation 5",
+            "slug": "playstation5",
+            "image": null,
+            "year_end": null,
+            "year_start": 2020,
+            "games_count": 1552,
+            "image_background": "https://media.rawg.io/media/games/f24/f2493ea338fe7bd3c7d73750a85a0959.jpeg"
+          },
+          "released_at": "2015-05-18",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 186,
+            "name": "Xbox Series S/X",
+            "slug": "xbox-series-x",
+            "image": null,
+            "year_end": null,
+            "year_start": 2020,
+            "games_count": 1295,
+            "image_background": "https://media.rawg.io/media/games/b4a/b4adf80c36e267b35acc3497ed2af19c.jpg"
+          },
+          "released_at": "2015-05-18",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 5,
+            "name": "macOS",
+            "slug": "macos",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 108285,
+            "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg"
+          },
+          "released_at": "2015-05-18",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 18,
+            "name": "PlayStation 4",
+            "slug": "playstation4",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 7048,
+            "image_background": "https://media.rawg.io/media/games/8a0/8a02f84a5916ede2f923b88d5f8217ba.jpg"
+          },
+          "released_at": "2015-05-18",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 7,
+            "name": "Nintendo Switch",
+            "slug": "nintendo-switch",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 5804,
+            "image_background": "https://media.rawg.io/media/games/63f/63f0e68688cad279ed38cde931dbfcdb.jpg"
+          },
+          "released_at": "2015-05-18",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 562545,
+            "image_background": "https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg"
+          },
+          "released_at": "2015-05-18",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 1,
+            "name": "Xbox One",
+            "slug": "xbox-one",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 5747,
+            "image_background": "https://media.rawg.io/media/games/737/737ea5662211d2e0bbd6f5989189e4f1.jpg"
+          },
+          "released_at": "2015-05-18",
+          "requirements": {}
+        }
+      ],
+      "status": "playing",
+      "id": "nK49JJweKQ8"
+    },
+    {
+      "rawgId": 283985,
+      "name": "Resident Evil 2 (1-Shot Demo)",
+      "background_image": "https://media.rawg.io/media/games/99e/99e8c13a3d91d0f6fb118ccd1548daee.jpg",
+      "rating": 4.14,
+      "released": "2019-01-11",
+      "genres": [
+        {
+          "id": 4,
+          "name": "Action",
+          "slug": "action",
+          "games_count": 192234,
+          "image_background": "https://media.rawg.io/media/games/b8c/b8c243eaa0fbac8115e0cdccac3f91dc.jpg"
+        }
+      ],
+      "platforms": [
+        {
+          "platform": {
+            "id": 1,
+            "name": "Xbox One",
+            "slug": "xbox-one",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 5748,
+            "image_background": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg"
+          },
+          "released_at": "2019-01-11",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 18,
+            "name": "PlayStation 4",
+            "slug": "playstation4",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 7049,
+            "image_background": "https://media.rawg.io/media/games/737/737ea5662211d2e0bbd6f5989189e4f1.jpg"
+          },
+          "released_at": "2019-01-11",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 562610,
+            "image_background": "https://media.rawg.io/media/games/2ba/2bac0e87cf45e5b508f227d281c9252a.jpg"
+          },
+          "released_at": "2019-01-11",
+          "requirements": {}
+        }
+      ],
+      "status": "playing",
+      "id": "GoMyWHqMnNw"
+    },
+    {
+      "rawgId": 43252,
+      "name": "The Witcher 3: Wild Hunt – Blood and Wine",
+      "background_image": "https://media.rawg.io/media/games/b51/b51c3649322ac0de9dfbe83435eda449.jpg",
+      "rating": 4.82,
+      "released": "2016-05-30",
+      "genres": [
+        {
+          "id": 5,
+          "name": "RPG",
+          "slug": "role-playing-games-rpg",
+          "games_count": 62253,
+          "image_background": "https://media.rawg.io/media/games/21c/21cc15d233117c6809ec86870559e105.jpg"
+        }
+      ],
+      "platforms": [
+        {
+          "platform": {
+            "id": 18,
+            "name": "PlayStation 4",
+            "slug": "playstation4",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 7048,
+            "image_background": "https://media.rawg.io/media/games/8a0/8a02f84a5916ede2f923b88d5f8217ba.jpg"
+          },
+          "released_at": "2016-05-30",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 4,
+            "name": "PC",
+            "slug": "pc",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 562545,
+            "image_background": "https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg"
+          },
+          "released_at": "2016-05-30",
+          "requirements": {}
+        },
+        {
+          "platform": {
+            "id": 1,
+            "name": "Xbox One",
+            "slug": "xbox-one",
+            "image": null,
+            "year_end": null,
+            "year_start": null,
+            "games_count": 5747,
+            "image_background": "https://media.rawg.io/media/games/737/737ea5662211d2e0bbd6f5989189e4f1.jpg"
+          },
+          "released_at": "2016-05-30",
+          "requirements": {}
+        }
+      ],
+      "status": "want-to-play",
+      "id": "a2HGPEsQlsY"
+    }
+  ],
+  "ratings": [],
+  "profile": [
+    {
+      "gamingName": "JOYBOY",
+      "bio": "Exploring games, building my collection.",
+      "id": "oHweATer2Yo"
+    }
+  ]
+}
